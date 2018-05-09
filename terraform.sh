@@ -32,6 +32,7 @@ echo "************************************************"
 echo -e "\n"
 
 ./terraform apply -auto-approve \
+		  -backup=- \
                   -var-file=variables.tfvars \
                   -var client_id=${client_id} \
                   -var client_secret=${client_secret} \
