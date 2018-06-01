@@ -219,9 +219,9 @@ resource "azurerm_virtual_machine_extension" "test" {
 
   settings = <<SETTINGS
     {
-        "Name": "",
+        "Name": "${var.domain}",
         "OUPath": "OU=Infrastructure,OU=Servers,OU=Resources,DC=agl,DC=int",
-        "User": "",
+        "User": "${var.domain}\\${var.domain_user}",
         "Restart": "true",
         "Options": "3"
     }
@@ -229,7 +229,7 @@ SETTINGS
 
 protected_settings = <<SETTINGS
     {
-        "Password": ""
+        "Password": "${var.domain_password}"
     }
 SETTINGS
 
