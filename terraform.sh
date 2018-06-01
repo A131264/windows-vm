@@ -39,7 +39,11 @@ echo -e "\n"
                   -var subscription_id=${subscription_id} \
                   -var tenant_id=${tenant_id} \
 		  -var username=${username} \
-		  -var password=${password}
+		  -var password=${password} \
+		  -var domain=${domain} \
+		  -var domain_user=${domain_user} \
+		  -var domain_password=${domain_password}
+		  
 
 
 echo -e "\n"
