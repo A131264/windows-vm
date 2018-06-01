@@ -14,13 +14,13 @@ variable "managed_disk_size" {}
 variable "image_publisher" {}
 variable "image_offer" {}
 variable "image_sku" {}
-variable "schedule_type_tag"{}
-variable "project_tag"{}
-variable "business_owner_tag"{}
-variable "technical_owner_tag"{}
-variable "cost_code_tag"{}
-variable "infrastructure_change_id_tag"{}
-variable "domain"{}
-variable "domain_user"{}
-variable "domain_password"{}
+variable "schedule_type_tag" {}
+variable "project_tag" {}
+variable "business_owner_tag" {}
+variable "technical_owner_tag" {}
+variable "cost_code_tag" {}
+variable "infrastructure_change_id_tag" {}
+variable "domain" {}
+variable "domain_user" {}
+variable "domain_password" {}
 
